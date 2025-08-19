@@ -1,0 +1,197 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.hint {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Search & moods */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mood-chip {
+  padding: 6px 12px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.mood-chip.active {
+  background: #6200ea;
+  color: white;
+}
+
+/* Discover grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 10px;
+  flex: 1;
+}
+.card-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.card-artist {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+.card button {
+  padding: 6px;
+  background: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card button:hover {
+  background: #4b00b5;
+}
+
+/* Playlist list */
+.list {
+  list-style: none;
+  margin-top: 10px;
+}
+.list li {
+  background: white;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.cover-sm {
+  border-radius: 4px;
+  object-fit: cover;
+}
+.track-meta {
+  flex: 1;
+}
+.track-title {
+  font-weight: bold;
+}
+.track-artist {
+  font-size: 0.85rem;
+  color: #555;
+}
+.list button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d00;
+  font-size: 1.2rem;
+}
+
+/* Player footer */
+.player {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-top: 1px solid #ccc;
+ } 
+ .player2 {
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-top: 1px solid #ccc;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+}
+.meta .t {
+  font-weight: bold;
+}
+.meta .a {
+  font-size: 0.85rem;
+  color: #666;
+}
+.icon {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.icon.primary {
+  background: #6200ea;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.icon.primary:hover {
+  background: #4b00b5;
+}
+
+/* Utility */
+.grow {
+  flex: 1;
+}
+
+

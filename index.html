@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RhythmicTunes: Your Melodic Companion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>RhythmicTunes: Your Melodic Companion</h1>
+      <a class="hint" href="https://www.soundhelix.com/audio-examples" target="_blank" rel="noreferrer">
+        Demo audio source
+      </a>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+      <input id="search" class="search" type="search" placeholder="Search by song or artist" />
+      <div class="moods" id="moods"></div>
+    </section>
+
+    <!-- Discover -->
+    <section>
+      <h2>Discover</h2>
+      <div id="results" class="grid"></div>
+      <p id="noResults" class="hint" hidden>No songs match your search.</p>
+    </section>
+
+    <!-- Playlist -->
+    <section>
+      <h2>My Playlist</h2>
+      <ul id="playlist" class="list"></ul>
+      <p id="empty" class="hint">Your playlist is empty. Add tracks from Discover.</p>
+    </section>
+
+    <!-- Player -->
+    <footer class="player">
+      <img id="nowCover"
+           src="https://timesofindia.indiatimes.com/photo/msid-101548900,imgsize-161673.cms"
+           width="54" height="54" alt="cover" class="cover-sm" />
+      <div class="meta grow">
+        <div id="nowTitle" class="t">kaavaalaa</div>
+        <div id="nowArtist" class="a">Anirudh Ravichander and Arunraja Kamaraj</div>
+      </div>git 
