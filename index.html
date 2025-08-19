@@ -15,27 +15,27 @@
       </a>
     </header>
 
-    <- Controls ->
+    <!-- Controls -->
     <section class="controls">
       <input id="search" class="search" type="search" placeholder="Search by song or artist" />
       <div class="moods" id="moods"></div>
     </section>
 
-    <- Discover->
+    <!-- Discover -->
     <section>
       <h2>Discover</h2>
       <div id="results" class="grid"></div>
       <p id="noResults" class="hint" hidden>No songs match your search.</p>
     </section>
 
-    <- Playlist ->
+    <!-- Playlist -->
     <section>
       <h2>My Playlist</h2>
       <ul id="playlist" class="list"></ul>
       <p id="empty" class="hint">Your playlist is empty. Add tracks from Discover.</p>
     </section>
 
-    <-Player->
+    <!-- Player -->
     <footer class="player">
       <img id="nowCover"
            src="https://timesofindia.indiatimes.com/photo/msid-101548900,imgsize-161673.cms"
@@ -43,4 +43,22 @@
       <div class="meta grow">
         <div id="nowTitle" class="t">kaavaalaa</div>
         <div id="nowArtist" class="a">Anirudh Ravichander and Arunraja Kamaraj</div>
-      </div>git 
+      </div>
+      <button id="prevBtn" class="icon" title="Previous">&#8592;</button>
+      <button id="playBtn" class="icon primary" title="Play/Pause">Play</button>
+      <button id="nextBtn" class="icon" title="Next">&#8594;</button>
+      <audio id="audio"></audio>
+    </footer>
+    <footer class="player1">
+      <img id="nowCover"
+           src="https://i.ytimg.com/vi/Br_-PXxwcrE/maxresdefault.jpg"
+           width="54" height="54" alt="cover" class="cover-sm" />
+      <div class="meta grow">
+        <div id="nowTitle" class="t">Oo Soolriya MaMa</div>
+        <div id="nowArtist" class="a">Naveen prasand and Anujsalam</div>
+      </div>
+      <button id="prevBtn" class="icon" title="Previous">&#8592;</button>
+      <button id="playBtn" class="icon primary" title="Play/Pause">Play</button>
+      <button id="nextBtn" class="icon" title="Next">&#8594;</button>
+      <audio id="audio"></audio>
+    </footer>
