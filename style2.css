@@ -1,0 +1,110 @@
+/* Cosmic Background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #000000, #000000, #161616);
+  overflow: hidden;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('sparkles.png') repeat;
+  animation: sparkleMove 20s linear infinite;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+@keyframes sparkleMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+/* Floating Container */
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  animation: floatUp 3s ease-out;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Title with Galaxy Glow */
+.title {
+  font-size: 3em;
+  color: #ff6ec4;
+  text-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+}
+
+/* Subtitle with Fade */
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #c3f0ff;
+  text-shadow: 0 0 5px #c3f0ff;
+}
+
+/* Button with Aurora Effect */
+button {
+  padding: 12px 24px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff6ec4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #7873f5;
+}
+
+
+.notes {
+  position: relative;
+  width: 100;
+  height: 200px;
+  overflow: hidden;
+}
+
+.notes span {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp 3s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Stagger each note with delay */
+.notes span:nth-child(1) {
+  left: 10px;
+  animation-delay: 0s;
+}
+.notes span:nth-child(2) {
+  right: 30px;
+  animation-delay: 0.5s;
+}
+.notes span:nth-child(3) {
+  left: 50px;
+  animation-delay: 1s;
+}
+.notes span:nth-child(4) {
+  right: 20px;
+  animation-delay: 5.5s;
+}
